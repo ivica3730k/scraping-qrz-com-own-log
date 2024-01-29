@@ -9,9 +9,20 @@ def html_to_adif(html_content):
     adi_log_string = ""
 
     rows = soup.find_all('tr', class_='lrow')
+    # exculde rows that have class lrow-nav
+    rows = [row for row in rows if 'lrow-nav' not in row['class']]
     logger.info("Found %d rows", len(rows))
     for row in rows:
-        pass
+        print(row)
+        date = row.find('td', class_='td_date').text.strip()
+        time = row.find('td', class_='td_time').text.strip()
+        callsign_theirs = row.find('td', class_='td_call2').text.strip()
+        band = row.find('td', class_='td_band1').find('span').text.strip()
+        print(date)
+        print(time)
+        print(callsign_theirs)
+        print(band)
+        break
         
        
 
