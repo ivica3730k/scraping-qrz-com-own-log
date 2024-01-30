@@ -1,0 +1,7 @@
+ADIF Export
+<adif_ver:5>3.1.1
+<created_timestamp:15>20230617 150526
+<programid:6>WSJT-X
+<programversion:5>2.6.1
+<eoh>
+<call:5>RV9FF <gridsquare:4>LO87 <mode:3>FT8 <rst_sent:3>+02 <rst_rcvd:3>-15 <qso_date:8>20230617 <time_on:6>150415 <qso_date_off:8>20230617 <time_off:6>150516 <band:3>20m <freq:9>14.074732 <station_callsign:8>M/9A3ICE <my_gridsquare:6>IO91KG <tx_pwr:2>10 <eor>
